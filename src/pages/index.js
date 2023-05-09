@@ -1,39 +1,93 @@
-import React from "react"
-import Layout from "../components/layout"
+import React from 'react'
+import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import Banner from '../components/Banner'
 
-export default function Home() {
-  return (
-    <Layout>
-      <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-                    </div>
+import pic01 from '../assets/images/pic01.jpg'
+import pic02 from '../assets/images/pic02.jpg'
+import pic03 from '../assets/images/pic03.jpg'
+import pic04 from '../assets/images/pic04.jpg'
+import pic05 from '../assets/images/pic05.jpg'
+import pic06 from '../assets/images/pic06.jpg'
+
+class HomeIndex extends React.Component {
+    render() {
+
+        return (
+            <Layout>
+                <Helmet
+                    title="Gatsby Starter - Forty"
+                    meta={[
+                        { name: 'description', content: 'Sample' },
+                        { name: 'keywords', content: 'sample, something' },
+                    ]}
+                >
+                </Helmet>
+
+                <Banner />
+
+                <div id="main">
+                    <section id="one" className="tiles">
+                        <article style={{backgroundImage: `url(${pic01})`}}>
+                            <header className="major">
+                                <h3>Aliquam</h3>
+                                <p>Ipsum dolor sit amet</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic02})`}}>
+                            <header className="major">
+                                <h3>Tempus</h3>
+                                <p>feugiat amet tempus</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic03})`}}>
+                            <header className="major">
+                                <h3>Magna</h3>
+                                <p>Lorem etiam nullam</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic04})`}}>
+                            <header className="major">
+                                <h3>Ipsum</h3>
+                                <p>Nisl sed aliquam</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic05})`}}>
+                            <header className="major">
+                                <h3>Consequat</h3>
+                                <p>Ipsum dolor sit amet</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic06})`}}>
+                            <header className="major">
+                                <h3>Etiam</h3>
+                                <p>Feugiat amet tempus</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                    </section>
+                    <section id="two">
+                        <div className="inner">
+                            <header className="major">
+                                <h2>Massa libero</h2>
+                            </header>
+                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                            <ul className="actions">
+                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-            </div>
-        </header>
-    </Layout>
-  )
+
+            </Layout>
+        )
+    }
 }
 
-export function Head() {
-    return (
-        <head>
-        <title>Home Pagise</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <script src="js/scripts.js"></script>
-</head>        
-    )
-}
+export default HomeIndex
