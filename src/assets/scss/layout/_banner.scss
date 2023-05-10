@@ -39,10 +39,6 @@
 			z-index: 1;
 		}
 
-		h1 {
-			font-size: 3.25em;
-		}
-
 		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
@@ -97,6 +93,7 @@
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+            align-items: end;
 
 			&.alt {
 				opacity: 0.75;
