@@ -7,7 +7,8 @@ const Header = (props) => (
         <Link to="/" className="logo">
             <strong>FIRE TABLE</strong>
         </Link>
-        <span>en sk</span>
+        <Link className="logo lang">en</Link>
+        <Link className="logo lang">sk</Link>
         <nav>
             <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
         </nav>
