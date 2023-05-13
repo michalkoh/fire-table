@@ -1,17 +1,16 @@
 import React from 'react'
 
-const Banner = (props) => (
-
-    <section id="banner" className={props.class}>
+const BannerMajor = (props) => (
+    <section id="banner" className="major">
         <div className="inner">
             <header className="major">
-                <h1>{ props.title }</h1>
+                <h1>Different Experience</h1>
             </header>
             <div className="content">
-                <p>{ props.content }</p>
+                <p>Enjoy a New Modern Fire</p>
             </div>
         </div>
     </section>
 )
 
-export default Banner
+export default BannerMajor
