@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const Header = (props) => (
     <header id="header" className="alt">
         <Link to="/" className="logo">
-            <strong>FIRE TABLE</strong>
+            <strong>FIRETABLE</strong>
         </Link>
         <Link className="logo lang">en</Link>
         <Link className="logo lang">sk</Link>

@@ -16,8 +16,11 @@ const About = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <p>We are a team of dedicated professionals who design and fabricate sustainable lightweight concrete products unlike anything else on the market.</p>
+                    <p>Inspired by architecture, and through years of research and development of the highest quality materials, we have designed a unique ultra-light concrete
+                       that has revolutionized the way concrete is designed and installed. Also we offering choose from whole different colors of quartz or granite.</p>
+                    <p>Base is also up to customer if prefer wood or stainless.</p>
+                    <p>So, we’re changing things. It’s that simple</p>
                 </div>
             </section>
         </div>

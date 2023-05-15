@@ -8,7 +8,7 @@ const Footer = (props) => (
                 <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
             </ul>
             <ul className="copyright">
-                <li>Copyright &copy; { new Date().getFullYear() } Fire Table</li>
+                <li>Copyright &copy; { new Date().getFullYear() } FIRETABLE</li>
             </ul>
         </div>
     </footer>
