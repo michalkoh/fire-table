@@ -32,9 +32,9 @@ const Portfolio = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>The Concrete Fire Pit Table - Sparkle Ignition</h3>
+                                <h3>The Concrete Fire Pit Table</h3>
                             </header>
-                            <p>This fire table is designed to be the center of attention in any outdoor space. Made using quality wood or stainless for the base and a waterproof concrete or quartz on the top. Molded out of supercast concrete, this fire table is built to last.</p>
+                            <p>The Concrete Fire Pit Table - Sparkle Ignition is designed to be the center of attention in any outdoor space. Made using quality wood or stainless for the base and a waterproof concrete or quartz on the top. Molded out of supercast concrete, this fire table is built to last.</p>
                             <p>It is made in the Slovakia and utilizes a UL listed burner - demonstrating the kind of quality you can trust. A simple door is built into the base in order to provide easy access to a propane tank and the burner fittings below the table surface. 
                                 Get that centerpiece your patio is missing with the Concrete Fire Pit Table - Sparkle Ignition!
                             </p>
