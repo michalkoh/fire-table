@@ -15,7 +15,7 @@ const Portfolio = (props) => (
             <meta name="description" content="Landing Page" />
         </Helmet>
 
-        <Banner title='Portfolio' content='Disover our work' class='portfolio' />
+        <Banner title='Portfolio' content='Disover our work' class='portfolio style2' />
 
         <div id="main">
             <section id="one">

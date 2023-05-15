@@ -11,7 +11,7 @@ const About = (props) => (
             <meta name="description" content="Generic Page" />
         </Helmet>
 
-        <Banner title='About us' content='Who we are and what we are doing' class='about' />
+        <Banner title='About us' content='Who we are and what we are doing' class='about style2' />
 
         <div id="main" className="alt">
             <section id="one">
