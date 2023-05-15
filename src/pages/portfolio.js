@@ -12,7 +12,7 @@ import pic10 from '../assets/images/pic01.jpg'
 const Portfolio = (props) => (
     <Layout>
         <Helmet>
-            <title>Fire Table - Portfolio</title>
+            <title>Firetable - Portfolio</title>
             <meta name="description" content="Landing Page" />
         </Helmet>
 

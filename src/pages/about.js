@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 const About = (props) => (
     <Layout>
         <Helmet>
-            <title>Fire Table - About us</title>
+            <title>Firetable - About us</title>
             <meta name="description" content="Generic Page" />
         </Helmet>
 
