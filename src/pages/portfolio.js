@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 
-import pic_portfolio_01 from '../assets/images/pic_portfolio_01.jpg'
+import pic_portfolio_02 from '../assets/images/pic_portfolio_02.jpg'
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
 import pic10 from '../assets/images/pic01.jpg'
@@ -27,7 +27,7 @@ const Portfolio = (props) => (
             <section id="two" className="spotlights">
                 <section>
                     <Link to="#" className="image">
-                        <img src={pic_portfolio_01} alt="" />
+                        <img src={pic_portfolio_02} alt="" />
                     </Link>
                     <div className="content">
                         <div className="inner">
@@ -35,7 +35,7 @@ const Portfolio = (props) => (
                                 <h3>The Concrete Fire Pit Table</h3>
                             </header>
                             <p>The Concrete Fire Pit Table - Sparkle Ignition is designed to be the center of attention in any outdoor space. Made using quality wood or stainless for the base and a waterproof concrete or quartz on the top. Molded out of supercast concrete, this fire table is built to last.</p>
-                            <p>It is made in the Slovakia and utilizes a UL listed burner - demonstrating the kind of quality you can trust. A simple door is built into the base in order to provide easy access to a propane tank and the burner fittings below the table surface. 
+                            <p>It is made in Slovakia and utilizes a UL listed burner - demonstrating the kind of quality you can trust. A simple door is built into the base in order to provide easy access to a propane tank and the burner fittings below the table surface. 
                                 Get that centerpiece your patio is missing with the Concrete Fire Pit Table - Sparkle Ignition!
                             </p>
                         </div>

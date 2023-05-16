@@ -28,14 +28,14 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="#">firetable@firetable.eu</a>
+                        <a href="#">firetable@yahoo.com</a>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-phone"></span>
                         <h3>Phone</h3>
-                        <span>(+421) 903 999 999</span>
+                        <span>+421 907 399 274</span>
                     </div>
                 </section>
                 <section>
