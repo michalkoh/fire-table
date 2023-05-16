@@ -5,7 +5,6 @@ module.exports = {
     description: "Portfolio Website Firetable"
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 
@@ -13,10 +12,6 @@ import pic10 from '../assets/images/pic01.jpg'
 
 const Portfolio = (props) => (
     <Layout>
-        <Helmet>
-            <title>Firetable - Portfolio</title>
-            <meta name="description" content="Landing Page" />
-        </Helmet>
 
         <Banner title='Portfolio' content='Disover our work' class='portfolio style2' />
 
@@ -80,5 +75,12 @@ const Portfolio = (props) => (
 
     </Layout>
 )
+
+export const Head = () => (
+    <>
+      <title>Firetable - Portfolio</title>
+      <meta name="description" content="portfolio" />
+    </>
+  )
 
 export default Portfolio

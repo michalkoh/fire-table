@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import BannerMajor from '../components/BannerMajor'
 
@@ -12,14 +11,6 @@ class HomeIndex extends React.Component {
 
         return (
             <Layout>
-                <Helmet
-                    title="Firetable"
-                    meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
-                    ]}
-                >
-                </Helmet>
 
                 <BannerMajor />
 
@@ -46,5 +37,12 @@ class HomeIndex extends React.Component {
         )
     }
 }
+
+export const Head = () => (
+    <>
+      <title>Firetable</title>
+      <meta name="description" content="firetable" />
+    </>
+  )
 
 export default HomeIndex

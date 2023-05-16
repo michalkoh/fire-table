@@ -1,15 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import Banner from '../components/Banner'
 
 const About = (props) => (
     <Layout>
-        <Helmet>
-            <title>Firetable - About us</title>
-            <meta name="description" content="Generic Page" />
-        </Helmet>
 
         <Banner title='About us' content='Who we are and what we are doing' class='about style2' />
 
@@ -28,5 +23,12 @@ const About = (props) => (
 
     </Layout>
 )
+
+export const Head = () => (
+    <>
+      <title>Firetable - About us</title>
+      <meta name="description" content="about us" />
+    </>
+  )
 
 export default About
