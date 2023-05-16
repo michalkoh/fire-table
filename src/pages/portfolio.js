@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 
+import pic_portfolio_01 from '../assets/images/pic_portfolio_01.jpg'
 import pic_portfolio_02 from '../assets/images/pic_portfolio_02.jpg'
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
@@ -27,7 +29,7 @@ const Portfolio = (props) => (
             <section id="two" className="spotlights">
                 <section>
                     <Link to="#" className="image">
-                        <img src={pic_portfolio_02} alt="" />
+                        <StaticImage src="../assets/images/pic_portfolio_02.jpg" placeholder="blurred" alt="The Concrete Fire Pit Table" />
                     </Link>
                     <div className="content">
                         <div className="inner">
@@ -41,10 +43,10 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                 </section>
-                {/* <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
+                {/*<section>
+                    <div>
+                        <StaticImage src="../assets/images/pic_portfolio_01.jpg" alt="A dinosaur" />
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
