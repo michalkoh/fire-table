@@ -17,7 +17,7 @@
 
   article {
     @include vendor('align-items', 'end');
-    @include vendor('display', 'flex');
+    //FIX @include vendor('display', 'flex');
     @include vendor(
       'transition',
       (
