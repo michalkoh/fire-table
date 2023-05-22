@@ -1,12 +1,22 @@
 import React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
-import Banner from '../components/Banner'
 
 const About = (props) => (
     <Layout>
-
-        <Banner title='About us' content='Who we are and what we are doing' class='about style2' />
+        
+        <section id="banner" className="bkg-image-grid style2">
+            <StaticImage className="bkg-image" alt="" src="../assets/images/about_us.jpeg" placeholder="blurred"/>
+            <div className="inner bkg-image-content">
+                <header className="major">
+                    <h1>About us</h1>
+                </header>
+                <div className="content">
+                    <p>Who we are and what we are doing</p>
+                </div>
+            </div>
+        </section>
 
         <div id="main" className="alt">
             <section id="one">
