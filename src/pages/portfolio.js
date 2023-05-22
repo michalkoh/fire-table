@@ -2,18 +2,21 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
-import Banner from '../components/Banner'
-
-import pic_portfolio_01 from '../assets/images/pic_portfolio_01.jpg'
-import pic_portfolio_02 from '../assets/images/pic_portfolio_02.jpg'
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic01.jpg'
 
 const Portfolio = (props) => (
     <Layout>
 
-        <Banner title='Portfolio' content='Disover our work' class='portfolio style2' />
+        <section id="banner" className="bkg-image-grid style2">
+            <StaticImage className="bkg-image" alt="" src="../assets/images/portfolio.jpg" placeholder="blurred"/>
+            <div className="inner bkg-image-content">
+                <header className="major">
+                    <h1>Portfolio</h1>
+                </header>
+                <div className="content">
+                    <p>Disover our work</p>
+                </div>
+            </div>
+        </section>
 
         <div id="main">
             <section id="one">

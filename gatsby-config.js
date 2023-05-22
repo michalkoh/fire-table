@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "FIRETABLE",
+    title: "Firetable",
     contact: "firetable@yahoo.com",
     description: "Portfolio Website Firetable"
   },

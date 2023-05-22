@@ -5,7 +5,22 @@
 ///
 
 /* Image */
+    .bkg-image-grid {
+        display: grid;
 
+        .bkg-image {
+            grid-area: 1/1;
+            position: unset;
+            overflow: auto;
+        }
+
+        .bkg-image-content {
+            grid-area: 1/1;
+            position: relative;
+            place-items: center;
+        }
+    }
+    
 	.image {
 		border: 0;
 		display: inline-block;

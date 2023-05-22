@@ -1,41 +1,44 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import BannerMajor from '../components/BannerMajor'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
+const HomeIndex = () =>  {
+    return (
+        <Layout>
 
-class HomeIndex extends React.Component {
-    render() {
+            <BannerMajor />
 
-        return (
-            <Layout>
+            <div id="main">
+                <section id="one" className="tiles">
 
-                <BannerMajor />
-
-                <div id="main">
-                    <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
+                    <article className="bkg-image-grid">
+                        <StaticImage className="bkg-image" alt="" src="../assets/images/pic01.jpg" placeholder="blurred"/>
+                        <div className="bkg-image-content">
                             <header className="major">
                                 <h3>Portfolio</h3>
                                 <p>Discover our work</p>
                             </header>
-                            <Link to="/portfolio" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
+                        </div>
+                        <Link  to="/portfolio" className="link primary"></Link>
+                    </article>
+
+                    <article className="bkg-image-grid">
+                        <StaticImage className="bkg-image" alt="" src="../assets/images/pic02.jpg" placeholder="blurred"/>
+                        <div className="bkg-image-content">
                             <header className="major">
                                 <h3>About us</h3>
                                 <p>Who we are and what we are doing</p>
                             </header>
-                            <Link to="/about" className="link primary"></Link>
-                        </article>
-                    </section>
-                </div>
+                        </div>
+                        <Link  to="/about" className="link primary"></Link>
+                    </article>
+                </section>
+            </div>
 
-            </Layout>
-        )
-    }
+        </Layout>
+    )
 }
 
 export const Head = () => (
