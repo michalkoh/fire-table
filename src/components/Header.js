@@ -1,19 +1,25 @@
 import React from 'react'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 
-const Header = (props) => (
-    <header id="header" className="alt">
-        <Link to="/" className="logo">
-            <strong>FIRETABLE</strong>
-        </Link>
-        <Link className="logo lang">en</Link>
-        <Link className="logo lang">sk</Link>
-        <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
-        </nav>
-    </header>
-)
+const Header = (props) => {
+    const {languages, originalPath} = useI18next();
+    return (
+        <header id="header" className="alt">
+            <Link to="/" className="logo">
+                <strong>FIRETABLE</strong>
+            </Link>
+            { languages.map((lng) => (
+                <Link key={lng} className="logo lang" to={originalPath} language={lng}>
+                  {lng}
+                </Link>
+            )) }
+            <nav>
+                <a className="menu-link" onClick={props.onToggleMenu}>Menu</a>
+            </nav>
+        </header>
+    );
+};
 
 Header.propTypes = {
     onToggleMenu: PropTypes.func

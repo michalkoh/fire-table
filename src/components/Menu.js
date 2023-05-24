@@ -1,17 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import { Trans } from 'react-i18next'
 
 const Menu = (props) => (
     <nav id="menu">
         <div className="inner">
             <ul className="links">
-                <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/portfolio">Portfolio</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/about">About</Link></li>
+                <li>
+                    <Link onClick={props.onToggleMenu} to="/">
+                        <Trans>Home</Trans>
+                    </Link>
+                </li>
+                <li>
+                    <Link onClick={props.onToggleMenu} to="/portfolio">
+                        <Trans>Portfolio</Trans>
+                    </Link>
+                </li>
+                <li>
+                    <Link onClick={props.onToggleMenu} to="/about">
+                        <Trans>About</Trans>
+                    </Link>
+                </li>
             </ul>
         </div>
-        <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
+        <a className="close" onClick={props.onToggleMenu}>Close</a>
     </nav>
 )
 
