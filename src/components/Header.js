@@ -10,12 +10,12 @@ const Header = (props) => {
                 <strong>FIRETABLE</strong>
             </Link>
             { languages.map((lng) => (
-                <Link className="logo lang" to={originalPath} language={lng}>
+                <Link key={lng} className="logo lang" to={originalPath} language={lng}>
                   {lng}
                 </Link>
             )) }
             <nav>
-                <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
+                <a className="menu-link" onClick={props.onToggleMenu}>Menu</a>
             </nav>
         </header>
     );

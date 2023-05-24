@@ -8,17 +8,17 @@ const HomeIndex = () =>  {
     return (
         <Layout>
 
-        <section id="banner" className="major bkg-image-grid">
-            <StaticImage className="bkg-image" alt="" src="../assets/images/banner.jpg" placeholder="blurred"/>
-            <div className="inner bkg-image-content">
-                <header className="major">
-                    <h1><Trans>Different Experience</Trans></h1>
-                </header>
-                <div className="content">
-                    <p><Trans>Enjoy a new modern fire</Trans></p>
+            <section id="banner" className="major bkg-image-grid">
+                <StaticImage className="bkg-image" alt="" src="../assets/images/banner.jpg" placeholder="blurred"/>
+                <div className="inner bkg-image-content">
+                    <header className="major">
+                        <h1><Trans>Different Experience</Trans></h1>
+                    </header>
+                    <div className="content">
+                        <p><Trans>Enjoy a new modern fire</Trans></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
             <div id="main">
                 <section id="one" className="tiles">
