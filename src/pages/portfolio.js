@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
+import Video from "../components/video"
 
 const Portfolio = (props) => {
 
@@ -45,6 +46,7 @@ const Portfolio = (props) => {
                             </div>
                         </div>
                     </section>
+
                     {/*<section>
                 <div>
                     <StaticImage src="../assets/images/pic_portfolio_01.jpg" alt="A dinosaur" />
@@ -78,6 +80,13 @@ const Portfolio = (props) => {
                 </div>
             </section> */}
                 </section>
+
+                <section id="three">
+                    <div className="inner">
+                        <Video videoSrcURL="https://www.youtube.com/embed/QHiay4pn8BI" videoTitle="Official Music Video on YouTube" />
+                    </div>
+                </section>
+
             </div>
 
         </Layout>
