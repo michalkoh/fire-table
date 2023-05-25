@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
-import Video from "../components/video"
+import Video from "../components/Video"
 
 const Portfolio = (props) => {
 
