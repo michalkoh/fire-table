@@ -46,45 +46,11 @@ const Portfolio = (props) => {
                             </div>
                         </div>
                     </section>
-
-                    {/*<section>
-                <div>
-                    <StaticImage src="../assets/images/pic_portfolio_01.jpg" alt="A dinosaur" />
-                </div>
-                <div className="content">
-                    <div className="inner">
-                        <header className="major">
-                            <h3>Rhoncus magna</h3>
-                        </header>
-                        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                        <ul className="actions">
-                            <li><Link to="/generic" className="button">Learn more</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <Link to="/generic" className="image">
-                    <img src={pic10} alt="" />
-                </Link>
-                <div className="content">
-                    <div className="inner">
-                        <header className="major">
-                            <h3>Sed nunc ligula</h3>
-                        </header>
-                        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                        <ul className="actions">
-                            <li><Link to="/generic" className="button">Learn more</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </section> */}
                 </section>
 
                 <section id="three">
-                    <div className="inner">
-                        <Video videoSrcURL="https://www.youtube.com/embed/QHiay4pn8BI" videoTitle="Official Music Video on YouTube" />
-                    </div>
+                    <Video videoSrcURL="https://www.youtube.com/embed/FtcnVSPXSCc" videoTitle="Official Music Video on YouTube" />
+                    <Video videoSrcURL="https://www.youtube.com/embed/4-79Ea3Xm-w" videoTitle="Official Music Video on YouTube" />
                 </section>
 
             </div>
