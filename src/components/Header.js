@@ -3,14 +3,14 @@ import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types'
 
 const Header = (props) => {
-    const {languages, originalPath} = useI18next();
+    const {languages, originalPath, i18n} = useI18next();
     return (
         <header id="header" className="alt">
             <Link to="/" className="logo">
                 <strong>FIRETABLE</strong>
             </Link>
             { languages.map((lng) => (
-                <Link key={lng} className="logo lang" to={originalPath} language={lng}>
+                <Link key={lng} className={ i18n.resolvedLanguage === lng ? 'logo lang selected' : 'logo lang' } to={originalPath} language={lng}>
                   {lng}
                 </Link>
             )) }
