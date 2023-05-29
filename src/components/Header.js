@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types'
 
 const Header = (props) => {
+
+    // change nav transparency when scrolling
+    const [transparent, setTransparent] = useState(true);
+    const changeNavTransparency = () => {
+        if (window.scrollY >= 180) {
+            setTransparent(false);
+        }
+        else {
+            setTransparent(true);
+        }
+    }
+
+    window.addEventListener('scroll', changeNavTransparency);
+
+    // localization
     const {languages, originalPath, i18n} = useI18next();
+
     return (
-        <header id="header" className="alt">
+        <header id="header" className={transparent ? 'alt' : ''}>
             <Link to="/" className="logo">
                 <strong>FIRETABLE</strong>
             </Link>
