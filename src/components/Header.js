@@ -5,17 +5,15 @@ import PropTypes from 'prop-types'
 const Header = (props) => {
 
     // change nav transparency when scrolling
+    const isBrowser = () => typeof window !== "undefined"
     const [transparent, setTransparent] = useState(true);
     const changeNavTransparency = () => {
-        if (window.scrollY >= 180) {
-            setTransparent(false);
-        }
-        else {
-            setTransparent(true);
+        if (isBrowser()){
+            setTransparent(window.scrollY < 180);
         }
     }
 
-    window.addEventListener('scroll', changeNavTransparency);
+    isBrowser() && window.addEventListener('scroll', changeNavTransparency);
 
     // localization
     const {languages, originalPath, i18n} = useI18next();
