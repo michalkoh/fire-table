@@ -1,5 +1,6 @@
 import React from 'react'
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -12,6 +13,14 @@ const About = (props) => {
 
     return (
         <Layout>
+
+            <Helmet
+                title={"Firetable - " + t("About")} 
+                meta={[
+                    { name: 'description', content: t('Seo_Description_About') },
+                    { name: 'keywords', content: t('Seo_Keywords_About') },
+                ]}>
+            </Helmet>
 
             <Banner title={t("About")} content={t("Who we are and what we are doing")} image={props.data.image} />
 
@@ -32,13 +41,6 @@ const About = (props) => {
         </Layout>
     )
 }
-
-export const Head = () => (
-    <>
-      <title>Firetable - About us</title>
-      <meta name="description" content="about us" />
-    </>
-  )
 
 export default About
 

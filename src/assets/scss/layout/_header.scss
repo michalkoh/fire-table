@@ -63,6 +63,11 @@
 
             &.lang {
                 padding: 0 0.3em;
+
+                &.selected {
+					color: _palette(highlight);
+                    font-weight: bold;
+				}
             }
 		}
 
