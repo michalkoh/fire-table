@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "michalkoh",
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "gatsby": "^5.9.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.9.0",
