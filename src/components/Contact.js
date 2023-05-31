@@ -15,7 +15,6 @@ const Contact = (props) => {
         <section id="contact">
             <div className="inner">
                 <section>
-                    {/* <form method="post" action="https://formspree.io/f/mbjeeybr"> */}
                     {state.succeeded && <p><Trans>Message sent</Trans></p>}
                     <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="field half first">
@@ -63,7 +62,7 @@ const Contact = (props) => {
                             <span className="icon alt fa-home"></span>
                             <h3><Trans>Address</Trans></h3>
                             <span>
-                                Kosice, 04001<br />
+                                Košice, 04001<br />
                                 <Trans>Slovakia</Trans>
                             </span>
                         </div>
