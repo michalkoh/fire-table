@@ -42,15 +42,34 @@ const Portfolio = (props) => {
                             <div className="inner">
                                 <header className="major">
                                     <h3>
-                                        <Trans i18nKey="portfolio_table_header">
+                                        <Trans i18nKey="portfolio_concrete_table_header">
                                             The Concrete Fire Pit Table
                                         </Trans>
                                     </h3>
                                 </header>
-                                <Trans i18nKey="portfolio_table_content">
+                                <Trans i18nKey="portfolio_concrete_table_content">
                                     <p>The Concrete Fire Pit Table - Sparkle Ignition is designed to be the center of attention in any outdoor space. Made using quality wood or stainless for the base and a waterproof concrete or quartz on the top. Molded out of supercast concrete, this fire table is built to last.</p>
                                     <p>It is made in Slovakia and utilizes a UL listed burner - demonstrating the kind of quality you can trust. A simple door is built into the base in order to provide easy access to a propane tank and the burner fittings below the table surface.</p>
                                     <p>Get that centerpiece your patio is missing with the Concrete Fire Pit Table - Sparkle Ignition!</p>
+                                </Trans>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <StaticImage src="../assets/images/pic_portfolio_01.jpg" placeholder="blurred" alt="A dinosaur" />
+                        </div>
+                        <div className="content">
+                            <div className="inner">
+                                <header className="major">
+                                    <h3>
+                                        <Trans i18nKey="portfolio_quartz_table_header">
+                                            The Fire Pit Table with Quartz
+                                        </Trans>
+                                    </h3>
+                                </header>
+                                <Trans i18nKey="portfolio_quartz_table_content">
+                                    <p>Table is possible to make with granite, marble or quartz, depending what customer prefer or like.</p>
                                 </Trans>
                             </div>
                         </div>
