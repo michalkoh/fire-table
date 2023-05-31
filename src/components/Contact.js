@@ -62,9 +62,10 @@ const Contact = (props) => {
                         <div className="contact-method">
                             <span className="icon alt fa-home"></span>
                             <h3><Trans>Address</Trans></h3>
-                            <span>Pri koscelu 16<br />
-                                Koksov-Baksa, 04000<br />
-                                Slovakia</span>
+                            <span>
+                                Kosice, 04001<br />
+                                <Trans>Slovakia</Trans>
+                            </span>
                         </div>
                     </section>
                 </section>

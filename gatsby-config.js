@@ -8,11 +8,11 @@ module.exports = {
     {
         resolve: `gatsby-plugin-manifest`,
         options: {
-            name: 'gatsby-starter-default',
-            short_name: 'starter',
+            name: 'FIRETABLE',
+            short_name: 'firetable',
             start_url: '/',
-            background_color: '#663399',
-            theme_color: '#663399',
+            background_color: '#CD7F32',
+            theme_color: '#CD7F32',
             display: 'minimal-ui',
             icon: 'src/assets/images/web-icon.png'
       },
@@ -42,7 +42,7 @@ module.exports = {
             localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
             languages: [`en`, `sk`],
             defaultLanguage: `en`,
-            siteUrl: `https://example.com`,
+            siteUrl: `https://www.firetable.eu`,
             // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
             trailingSlash: 'always',
             // you can pass any i18next options
