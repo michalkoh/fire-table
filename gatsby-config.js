@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Firetable",
-    contact: "firetable@yahoo.com",
-    description: "Portfolio Website Firetable"
+    description: "Building customized fire pit tables to enjoy an evening in your yard. We'll do our best to fulfill all your wishes.",
+    contact: "info@firetable.eu",
+    author: "firetable.eu",
+    keywords: "fire pit, fire table, gas table, concrete, quartz, garden",
+    image: "/web-icon-wb.png"
   },
   plugins: [
     {
