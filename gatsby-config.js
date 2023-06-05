@@ -5,9 +5,10 @@ module.exports = {
     contact: "info@firetable.eu",
     author: "firetable.eu",
     keywords: "fire pit, fire table, gas table, concrete, quartz, garden",
-    image: "/web-icon-wb.png"
-  },
-  plugins: [
+    image: "/web-icon-wb.png",
+    siteUrl: "https://www.firetable.eu/"
+    },
+    plugins: [
     {
         resolve: `gatsby-plugin-manifest`,
         options: {
@@ -18,7 +19,7 @@ module.exports = {
             theme_color: '#CD7F32',
             display: 'minimal-ui',
             icon: 'src/assets/images/web-icon.png'
-      },
+    },
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
@@ -38,7 +39,7 @@ module.exports = {
             name: `locale`,
             path: `${__dirname}/src/locales`
         }
-      },
+    },
     {
         resolve: `gatsby-plugin-react-i18next`,
         options: {
@@ -57,6 +58,54 @@ module.exports = {
                 nsSeparator: false
             }
         }
-      }
-  ],
+    },
+    {
+        resolve: "gatsby-plugin-sitemap",
+        options: {
+            query: `
+            {
+                allSitePage {
+                    nodes {
+                        path
+                    }
+                }
+                allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
+                nodes {
+                    ... on WpPost {
+                        uri
+                        modifiedGmt
+                        }
+                    ... on WpPage {
+                        uri
+                        modifiedGmt
+                        }
+                    }
+                }
+            }
+        `,
+            resolveSiteUrl: () => siteUrl,
+            resolvePages: ({
+                allSitePage: { nodes: allPages },
+                allWpContentNode: { nodes: allWpNodes },
+            }) => {
+                    const wpNodeMap = allWpNodes.reduce((acc, node) => {
+                        const { uri } = node
+                        acc[uri] = node
+
+                    return acc
+                }, {})
+
+                return allPages.map(page => {
+                    return { ...page, ...wpNodeMap[page.path] }
+                })
+            },
+            serialize: ({ path, modifiedGmt }) => {
+                return {
+                    url: path,
+                    lastmod: modifiedGmt,
+                }
+            },
+        },
+    },
+    ],
 }
