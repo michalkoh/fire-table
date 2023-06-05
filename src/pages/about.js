@@ -6,27 +6,16 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import Banner from '../components/Banner'
-import Seo from '../components/seo';
+import Seo from '../components/Seo';
 
 const About = (props) => {
 
     const {t} = useTranslation();
 
-        console.log(props);
-
     return (
         <Layout>
 
-
-            <Seo title={"Firetable - " + t("About")} />
-
-            {/* <Helmet
-                title={"Firetable - " + t("About")} 
-                meta={[
-                    { name: 'description', content: t('Seo_Description_About') },
-                    { name: 'keywords', content: t('Seo_Keywords_About') },
-                ]}>
-            </Helmet> */}
+            <Seo title={t("About")} />
 
             <Banner title={t("About")} content={t("Who we are and what we are doing")} image={props.data.image} />
 
@@ -64,15 +53,6 @@ export const query = graphql`
         image: file(relativePath: {eq: "about_us.jpeg"}) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED)
-            }
-        },
-        site: site {
-            siteMetadata {
-                title
-                description
-                author
-                keywords
-                image
             }
         }
     }

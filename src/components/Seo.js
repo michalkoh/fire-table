@@ -67,7 +67,7 @@ Seo.defaultProps = {
     description: ``,
     lang: `en`,
     meta: [],
-    title: `hello`
+    title: `Firetable`
 }
 
 Seo.propTypes = {
