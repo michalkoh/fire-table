@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
+import Seo from '../components/Seo';
 import Video from "../components/Video"
 
 const Portfolio = (props) => {
@@ -15,13 +16,7 @@ const Portfolio = (props) => {
     return (
         <Layout>
 
-            <Helmet
-                title={"Firetable - " + t("Portfolio")} 
-                meta={[
-                    { name: 'description', content: t('Seo_Description_Portfolio') },
-                    { name: 'keywords', content: t('Seo_Keywords_Portfolio') },
-                ]}>
-            </Helmet>
+            <Seo title={t("Portfolio")} />
 
             <Banner title={t("Portfolio")} content={t("Discover our work")} image={props.data.image} />
 

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import { Helmet } from 'react-helmet';
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 import Banner from '../components/Banner'
+import Seo from '../components/Seo';
 
 const About = (props) => {
 
@@ -14,13 +15,7 @@ const About = (props) => {
     return (
         <Layout>
 
-            <Helmet
-                title={"Firetable - " + t("About")} 
-                meta={[
-                    { name: 'description', content: t('Seo_Description_About') },
-                    { name: 'keywords', content: t('Seo_Keywords_About') },
-                ]}>
-            </Helmet>
+            <Seo title={t("About")} />
 
             <Banner title={t("About")} content={t("Who we are and what we are doing")} image={props.data.image} />
 

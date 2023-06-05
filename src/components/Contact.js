@@ -47,7 +47,7 @@ const Contact = (props) => {
                         <div className="contact-method">
                             <span className="icon alt fa-envelope"></span>
                             <h3><Trans>Email</Trans></h3>
-                            <a href="#">firetable@yahoo.com</a>
+                            <a href="mailto:info@firetable.eu">info@firetable.eu</a>
                         </div>
                     </section>
                     <section>

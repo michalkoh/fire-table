@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby';
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import { Helmet } from 'react-helmet';
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
+import Seo from '../components/Seo';
 
 const HomeIndex = () =>  {
 
@@ -11,13 +11,7 @@ const HomeIndex = () =>  {
     
     return (
         <Layout>
-            <Helmet
-                title="Firetable"
-                meta={[
-                    { name: 'description', content: t('Seo_Description_Home') },
-                    { name: 'keywords', content: t('Seo_Keywords_Home') },
-                ]}>
-            </Helmet>
+            <Seo title={t("Home")} />
 
             <section id="banner" className="major bkg-image-grid">
                 <StaticImage className="bkg-image" alt="" src="../assets/images/banner.jpg" placeholder="blurred"/>
