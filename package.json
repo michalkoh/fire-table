@@ -13,6 +13,7 @@
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-sass": "^6.9.0",
     "gatsby-plugin-sharp": "^5.10.0",
+    "gatsby-plugin-sitemap": "^6.10.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "i18next": "^22.5.0",
