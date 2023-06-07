@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://firetable.eu`
+
 module.exports = {
   siteMetadata: {
     title: "Firetable",
