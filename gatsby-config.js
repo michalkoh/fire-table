@@ -19,7 +19,13 @@ module.exports = {
                 theme_color: '#CD7F32',
                 display: 'minimal-ui',
                 icon: 'src/assets/images/web-icon.png'
+            },
         },
+        {
+            resolve: `gatsby-plugin-canonical-urls`,
+            options: {
+                siteUrl: `https://www.example.com`,
+            },
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-offline',
