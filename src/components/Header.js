@@ -25,7 +25,7 @@ const Header = (props) => {
             </Link>
             { languages.map((lng) => (
                 <Link key={lng} className={ i18n.resolvedLanguage === lng ? 'logo lang selected' : 'logo lang' } to={originalPath} language={lng}>
-                  {lng}
+                    {lng}
                 </Link>
             )) }
             <nav>

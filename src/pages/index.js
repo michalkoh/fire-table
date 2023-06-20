@@ -17,7 +17,7 @@ const HomeIndex = () =>  {
                 <StaticImage className="bkg-image" alt="" src="../assets/images/banner.jpg" placeholder="blurred"/>
                 <div className="inner bkg-image-content">
                     <header className="major">
-                        <h1><Trans>Different Experience</Trans></h1>
+                        <h1><Trans>Customized Firetables</Trans></h1>
                     </header>
                     <div className="content">
                         <p><Trans>Enjoy a new modern fire</Trans></p>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import { Helmet } from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
