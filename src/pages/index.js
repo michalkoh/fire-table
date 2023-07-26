@@ -8,7 +8,7 @@ import Seo from '../components/Seo';
 const HomeIndex = () =>  {
 
     const {t} = useTranslation();
-    
+
     return (
         <Layout>
             <Seo title={t("Home")} />
